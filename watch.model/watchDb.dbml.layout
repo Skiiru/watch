@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="watchDb">
+  <DataContextMoniker Name="/watchDbDataContext" />
+  <nestedChildShapes>
+    <classShape Id="44134d2f-6bf7-4c1e-8377-55cb1a7675bc" absoluteBounds="0.75, 0.875, 2, 1.3862939453124998">
+      <DataClassMoniker Name="/watchDbDataContext/Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b6b44b91-9207-4aa7-9047-25613acb409e" absoluteBounds="0.765, 1.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5d80c0ad-2959-4f7e-90f3-4212664c9653" absoluteBounds="3.5, 0.875, 2, 1.3862939453124998">
+      <DataClassMoniker Name="/watchDbDataContext/UserRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b59de605-42ac-4c94-bcd7-212ff3d34df8" absoluteBounds="3.515, 1.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b695a8dd-6cbf-4b6d-8872-67bb539ac6a2" absoluteBounds="3.5, 3, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/watchDbDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a942bfc0-a436-4a81-be32-aaa1acd83250" absoluteBounds="3.515, 3.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.56814697265625); (3.5 : 1.56814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/watchDbDataContext/Role/Role_UserRole" />
+      <nodes>
+        <classShapeMoniker Id="44134d2f-6bf7-4c1e-8377-55cb1a7675bc" />
+        <classShapeMoniker Id="5d80c0ad-2959-4f7e-90f3-4212664c9653" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 3); (4.5 : 2.2612939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/watchDbDataContext/User/User_UserRole" />
+      <nodes>
+        <classShapeMoniker Id="b695a8dd-6cbf-4b6d-8872-67bb539ac6a2" />
+        <classShapeMoniker Id="5d80c0ad-2959-4f7e-90f3-4212664c9653" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
